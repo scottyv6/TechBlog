@@ -36,10 +36,11 @@ router.post('/login', async (req, res) => {
   });
 
 //logout
-router.get('/logout', (req, res) => {
+router.post('/logout', (req, res) => {
     if (req.session.logged_in) {
+      console.log('req.session.logged_in', req.session.logged_in);
       req.session.destroy(() => {
-        res.status(204).end();
+        res.status(204).end();        
       });
     } else {
       res.status(400).end();

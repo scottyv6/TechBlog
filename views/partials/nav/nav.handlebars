@@ -1,14 +1,19 @@
 <nav>
-    <ul>
-        <li><a href="/">Home</a></li>
+    <div>
+    
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
 
         {{#if session.logged_in}}
-        <li><a href="/api/logout">Logout</a></li>
+        <button class="no-button" id="logout">Logout</button>
+        {{else}}
+        <a href="/login">Login</a>
         {{/if}}
 
-        {{#unless session.logged_in}}
-        <li><a href="/login">Login</a></li>
-        {{/unless}}
-    </ul>
+    </div>
+    <div>
+        <h1>The Tech Blog</h1>
+    </div>
+   
 
 </nav>

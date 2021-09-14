@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,9 +18,9 @@
     {{!-- footer --}}
 
     <!-- Render script for logged in users only -->
-    {{#if logged_in}}
+    {{!-- {{#if session.logged_in}} --}}
     <script src="/js/logout.js"></script>
-    {{/if}}
+    {{!-- {{/if}} --}}
 
 </body>
 </html>
