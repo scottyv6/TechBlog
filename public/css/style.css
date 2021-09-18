@@ -1,3 +1,12 @@
+:root {
+  --primary: #ccdad1;
+  --secondary: #9caea9;
+  --tertiary: #788585;
+  --light-dark: #6f6866;
+  --dark: #0f0241;
+  --border-radius: .3rem;
+}
+
 
 .no-button {
   background: none;
@@ -14,3 +23,12 @@
   text-decoration: underline;
 }
 
+nav {
+  background-color: var(--dark);
+  color: aqua;
+}
+
+.mainHeading {
+  background-color: aqua;
+  color: darkblue;
+}

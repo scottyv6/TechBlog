@@ -19,9 +19,10 @@
     {{!-- footer --}}
 
     <!-- Render script for logged in users only -->
-    {{!-- {{#if session.logged_in}} --}}
+    {{#if session.logged_in}}
+    <h3>logged in h3</h3>
     <script src="/js/logout.js"></script>
-    {{!-- {{/if}} --}}
+    {{/if}}
 
 </body>
 </html>
