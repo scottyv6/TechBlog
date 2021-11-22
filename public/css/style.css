@@ -32,3 +32,9 @@ nav {
   background-color: aqua;
   color: darkblue;
 }
+
+.blog {
+  border: black;
+  border-radius: .3rem;
+  border-style: solid;
+}

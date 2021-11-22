@@ -1,0 +1,28 @@
+<div class="row  ">
+  <div class="col blog">
+    <h2> {{title}} </h2>
+    Created by {{user.name}} on {{format_date date_created}}
+    <div class="col">
+    <p>
+      {{content}}
+    </p>
+    </div>
+  </div>
+</div>
+
+<div class="row  ">
+  <div class="col">
+    <div class="col">
+    <h3>Comment</h3>
+    </div>
+    <div class="form-group">
+        <textarea class="form-input" name="comment" id="comment" cols="30" rows="10"></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="../js/blog.js"></script>
