@@ -1,21 +1,30 @@
-<!-- Loop over each object in the blogs array -->
-{{#each blogs as |blog| }}
-<div class="row  ">
-  <div class="col blog">
-    <h2>
-      
-      <a href="/blog/{{blog.id}}">{{blog.title}}</a>
-    </h2>
-    
-    Created by {{blog.user.name}} on {{format_date blog.date_created}}
-    <div class="col">
-    <p>
-      {{blog.content}}
-    </p>
-    </div>
-
-
+<div class="row">
+  <div class="col-auto">
+    <h2>Blogs</h2>
   </div>
-  
 </div>
-{{/each}}
+
+<div class="row mt-4">
+  {{#if blogs.length}}
+    <div class="col-md-6 project-list">
+      <!-- Loop over each object in the blogs array -->
+      {{#each blogs as |blog| }}
+      <div class="row  ">
+        <div class="col blog">
+          <h2> <a href="/blog/{{blog.id}}">{{blog.title}}</a> </h2>    
+          <p>Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
+          <div class="col">
+          <p>
+            {{blog.content}}
+          </p>
+          </div>
+        </div>  
+      </div>
+      {{/each}}
+    </div>
+    {{else}}
+    <div>
+      <h2> No blogs yet!</h2>
+    </div>
+  {{/if}}
+</div>
