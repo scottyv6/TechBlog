@@ -1,6 +1,6 @@
 const commentAdd = async (event) => {
     event.preventDefault();
-    const content = document.querySelector('#comment-text').value.trim();
+    const content = document.querySelector('#comment').value.trim();
   
     const blog_id = window.location.toString().split('/')[
       window.location.toString().split('/').length - 1
@@ -26,9 +26,7 @@ const commentAdd = async (event) => {
       }
     }
   };
-  
-  
-  
+    
   document
     .querySelector('.new-comment-form')
     .addEventListener('submit', commentAdd);
