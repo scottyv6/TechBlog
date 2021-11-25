@@ -10,14 +10,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="flex-column justify-space-around">
-        {{!-- nav --}}
+    <div class="flex-column justify-space-around">        
         {{> nav/nav}}
+        
         <main class="container container-fluid mt-5">
             {{{ body }}}
         </main>
-        {{!-- footer --}}
-
+        
         <!-- Render script for logged in users only -->
         {{#if session.logged_in}}
             <script src="/js/logout.js"></script>

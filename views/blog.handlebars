@@ -1,8 +1,12 @@
-<h1 class="text-center">{{title}}</h1>
+<div class="card mx-3 py-0">
+  <div class="card-header">
+    <h1 class="text-center">{{title}}</h1>
+  <p class="ms-3 text-center">Posted by {{user.name}} </p>
+  </div>
+  <div class="card-body">
+    <h3 class="ms-3 text-center">{{content}}</h3>
+  </div>  
 </div>
-
-<h3 class="ms-3 text-center">{{content}}</h3>
-<p class="ms-3 text-center">Posted by {{user.name}} </p>
 
 {{#if is_current_user_author}}
 <div class="col-md-12">

@@ -2,13 +2,10 @@
 
  ## Description
   ---
-  An application that allows users to record mealplans for the future and now by being able to review meals from the past.
+  An application that allows people to publish their blog posts and comment on other developers’ posts as well.
 
 
-  Below is a screenshot of the main page
-
-  ![Meal planner main screen](./images/screenshot1.png)
-  
+   
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
