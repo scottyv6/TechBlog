@@ -1,17 +1,3 @@
-// const express = require('express');
-
-// const router = express.Router();
-
-// // login
-// router.get('/', function(req, res){
-
-//     res.render('home');
-// });
-
-
-
-// module.exports = router;
-
 const router = require('express').Router();
 const { Blog, User, Comment } = require('../models');
 const withAuth = require('../middleware/auth-middleware');
@@ -105,7 +91,6 @@ router.get('/register', function(req, res){
 
 router.get('/createnew', withAuth, async (req, res) => {
   try {
-    // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
       include: [{ model: Blog }],
@@ -118,14 +103,14 @@ router.get('/createnew', withAuth, async (req, res) => {
       logged_in: true
     });
   } catch (err) {
-    res.status(500).json(err);
     console.log('error is', err);
+    res.status(501).json(err);
+    
   }
 });
 
 router.get('/dashboard', withAuth, async (req, res) => {
   try {
-    // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
       include: [

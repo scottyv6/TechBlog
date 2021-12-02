@@ -18,7 +18,7 @@
   
   ## Usage
   <!-- update line below -->
-  Open [website](https://secure-garden-16153.herokuapp.com/) in browser. 
+  Open [website](https://stark-coast-44802.herokuapp.com/) in browser. 
   
   ## License
   This application is covered under the MIT License license.
